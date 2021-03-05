@@ -16,7 +16,7 @@ from sklearn.tree import DecisionTreeRegressor
 
 # %%
 
-bg_data = pd.read_csv("C:/Users/Al-Mahdi/Dropbox/Python/band_gap_PRB93-115104.csv")
+bg_data = pd.read_csv("/home/mohammadreza/Desktop/band-gap/band_gap_PRB93-115104.csv")
 bg_data.head(10)
 # %%
 bg_data.info()
@@ -24,7 +24,7 @@ bg_data.describe()
 
 # %%
 
-bg_main = bg_data.drop(['Space-group', 'Eg(exp.;eV)', 'Type'], axis=1, inplace=False)
+bg_main = bg_data.drop(labels=['Space-group', 'Eg(exp.;eV)', 'Type'], axis=1, inplace=False)
 bg_main.head(10)
 
 # %%
@@ -66,7 +66,7 @@ plt.show()
 attributes = ['Eg(PBE;eV)', 'Eg(mBJ;eV)', 'Eg(G0W0;eV)']
 scatter_matrix(train_set[attributes], figsize=(15, 10))
 plt.show()
-# %% ...
+# %% ... Separating predictors and the label
 band_gap = train_set.drop('Eg(G0W0;eV)', axis=1, inplace=False)
 band_gap_label = train_set['Eg(G0W0;eV)'].copy()
 
