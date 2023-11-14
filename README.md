@@ -1,6 +1,6 @@
 ## Two example for **LinearRegression** model in machine learning.
 
-This repository is used to train a model in which we've  assumed that data follow a linear behavior with labeld data. In machine learning, it is called **supervised learning**.
+This repository is used to train a model in which we've  assumed that data follow a linear behavior with labeled data. In machine learning, it is called **supervised learning**.
 
 The first example refers to the paper published in [Phys. Rev. B](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.93.115104):"_Prediction model of band gap for inorganic compounds by combination of
 density functional theory calculations and machine learning techniques_". 
